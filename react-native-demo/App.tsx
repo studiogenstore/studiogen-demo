@@ -4,6 +4,7 @@
  * @format
  */
 
+import { STUDIOGEN_WORKFLOW_URL } from '@env';
 import { StudioGenChatLauncher } from '@studiogen/react-native-sdk';
 import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import {
@@ -11,8 +12,8 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
-const WORKFLOW_URL =
-  'https://studiogen.store/widget/0fc10017-1bc9-4058-994d-9c7303d28242';
+// Set in .env (see .env.example).
+const WORKFLOW_URL = STUDIOGEN_WORKFLOW_URL;
 
 // Same styles as the web embed snippet.
 const BUTTON_CSS =

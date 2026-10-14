@@ -13,6 +13,7 @@ A small "Demo Store" screen with a floating chat button that opens the StudioGen
 ```sh
 cd react-native-demo
 npm install
+cp .env.example .env   # then set STUDIOGEN_WORKFLOW_URL
 
 # Start Metro
 npm start
@@ -23,7 +24,7 @@ npm run android
 npm run ios
 ```
 
-To point the demo at your own bot, change `WORKFLOW_URL` in [`react-native-demo/App.tsx`](./react-native-demo/App.tsx).
+The bot URL comes from `STUDIOGEN_WORKFLOW_URL` in `react-native-demo/.env` (see [`.env.example`](./react-native-demo/.env.example)). After changing it, restart Metro with `npm start -- --reset-cache` so the new value is picked up.
 
 See the [React Native environment setup guide](https://reactnative.dev/docs/set-up-your-environment) if this is your first React Native project.
 
